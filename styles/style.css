@@ -32,8 +32,9 @@ a{
 .text-primary{
     color: #FF900E;
 }
-.bg-light{
+.bg-light {
     background-color: rgba(255, 144, 14, 0.1);
+    padding: 50px;
 }
 * {
     margin: 0;
@@ -95,6 +96,9 @@ main> section{
 /* nav Styles ends here */
 
 /* banner styles starts here */
+main{
+    background-color: rgb(255, 255, 255);
+}
 .banner-content{
     width: 850px;
     margin: 0 auto;
@@ -214,7 +218,27 @@ main> section{
 .fact-number{
     font-size: 3rem;
     font-weight: 500;
+} 
+
+/* some facts style end here */
+
+/* Our Sponsors section style start here */
+
+.sponsors-info{
+    max-width: 540px;
+    margin: 50px auto;
 }
+.sponsor-companis{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-companis img{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+
+
+/* Our Sponsors section style end here */
 
 /* small screen responsive Media Query */
 @media screen and (max-width: 576px){
@@ -235,7 +259,9 @@ main> section{
     .banner-content{
         width: 100%;
     }
-   .team-image-container{
+   .team-image-container,
+   .sponsor-companis
+   {
     grid-template-columns: repeat(1, 1fr);
    }
    .our-features {
@@ -292,8 +318,33 @@ main> section{
         margin-bottom: 20px;
         width: 100%;
     }
+    .our-sponsors, .sponsors-info{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .sponsors-info{
 
-    
+    }
+    .section-title{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .sponsor-description {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 35px;
+        padding: 30px;
+    }
+    .sponsor-companis{
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .sponsor-companis img{
+        margin: 0 auto;
+    };
 }
 
 /* Medium screen size device media query */
@@ -354,7 +405,16 @@ main> section{
         margin: 0 auto;
         margin-bottom: 20px;
     }
-
+    .sponsors-info{
+        text-align: center;
+    }
+    .sponsor-companis {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 30px;
+        margin: 0 auto;
+    }
 
 
 } 
