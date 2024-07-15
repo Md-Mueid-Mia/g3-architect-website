@@ -18,7 +18,7 @@ a{
     list-style: none;
 }
 .dark-1{
-    color: #1f1f1f;
+    color: #131313;
 }
 .dark-2{
     color: #424242;
@@ -151,9 +151,42 @@ main> section{
 
 /* teams and feature related styles end */ 
 
+/* enjoy section styles start here */
+.enjoy{
 
-
-
+}
+.enjoy-container{}
+.section-title2{
+    font-size: 2.8rem;
+    width: 468;
+    padding: 24px 92px 24px 26px;
+    border-left: 5px solid #FF900E;
+}
+.section-description{
+    width: 586px;
+    font-size: 1rem;
+    margin-bottom: 32px;
+}
+.enjoy-item{
+    width: 586px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    background: rgb(255, 255, 255);
+    padding: 30px;
+    margin-bottom: 20px;
+}
+.enjoy-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.enjoy-description{
+    font-size: 1rem;
+    font-weight: 400;
+}
+.enjoy-image-container{
+    margin-left: 140px;
+}
 /* some facts style start here */
 
 .facts-container{
@@ -183,8 +216,17 @@ main> section{
     font-weight: 500;
 }
 
-/* responsive Media Query */
+/* small screen responsive Media Query */
 @media screen and (max-width: 576px){
+    
+    header {
+        padding: 20px auto;
+        justify-content: center;
+        margin: 0 auto;
+        margin-left: 25px;
+        align-items: center;
+    }
+    
     .navbar,
     .nav-links, 
     .teams{
@@ -211,7 +253,27 @@ main> section{
         text-align: start;
         padding: 20px 27px;
     }
-
+    .enjoy-container {
+        flex-direction: column;
+    }
+    .section-title{
+        width: ;
+        margin: 30px;
+        font-size: 2rem;
+    }
+    .enjoy-item {
+        width: 100%;
+        margin: 15px;
+    }
+    .enjoy-image-container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .enjoy-image-container > img {
+        width: calc(100% - 60px);
+        border-radius: 20px;
+        margin: 30px;
+    }
    .some-facts{
     width: 100%;
     margin: 0 auto;
@@ -230,6 +292,8 @@ main> section{
         margin-bottom: 20px;
         width: 100%;
     }
+
+    
 }
 
 /* Medium screen size device media query */
@@ -258,9 +322,6 @@ main> section{
         padding: 60px 35px;
         text-align: center;
     }
-
-
-
     .some-facts {
         width: 100%;
         text-align: center;
@@ -273,7 +334,26 @@ main> section{
     .facts-container {
         margin: 50px auto;
     }
-
+    .enjoy-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .enjoy-image-container{
+        width: 100%;
+        margin: 0;
+    }
+    .section-title2{
+        margin: 0 auto;
+    }
+    .section-description{
+        margin: 0 auto;
+    }
+    .enjoy-item{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
 
 
 
