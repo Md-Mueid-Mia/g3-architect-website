@@ -191,6 +191,21 @@ main{
 .enjoy-image-container{
     margin-left: 140px;
 }
+#experience-badge {
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 8px;
+    background-color: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-left: -86px;
+    margin-top: -120px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 600;
+}
 /* some facts style start here */
 
 .facts-container{
@@ -239,6 +254,26 @@ main{
 
 
 /* Our Sponsors section style end here */
+
+/* footer part start here */
+
+footer{
+    width: 1440px;
+    height: 100px;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: rgb(66, 66, 66);
+    border-radius: 8px;
+    background: rgb(255, 244, 231);
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 140px;
+}
+footer p{
+    padding: 40px 0;
+}
+
+/* footer part end here */
 
 /* small screen responsive Media Query */
 @media screen and (max-width: 576px){
@@ -295,10 +330,15 @@ main{
         width: 100%;
         margin: 0 auto;
     }
+    
     .enjoy-image-container > img {
         width: calc(100% - 60px);
         border-radius: 20px;
         margin: 30px;
+    }
+    #experience-badge{
+        margin-left: 20px;
+        margin-top: 20px;
     }
    .some-facts{
     width: 100%;
@@ -325,10 +365,11 @@ main{
     .sponsors-info{
 
     }
-    .section-title{
+    .section-title {
         width: 100%;
         margin: 0 auto;
         text-align: center;
+        margin-top: 85px;
     }
     .sponsor-description {
         width: 100%;
@@ -344,7 +385,17 @@ main{
     }
     .sponsor-companis img{
         margin: 0 auto;
-    };
+    }
+    footer {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-left: 5px;
+    }
+    footer p{
+        text-align: center;
+        padding: 24px;
+    }
 }
 
 /* Medium screen size device media query */
@@ -415,6 +466,8 @@ main{
         gap: 30px;
         margin: 0 auto;
     }
-
+    footer{
+        width: 100%;
+    }
 
 } 
